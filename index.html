@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="Umer Farooq">
+<meta name="description" content="Umer Farooq - Data Science, Forecasting, AI Systems">
+<meta name="keywords" content="data science, machine learning, forecasting, AI, Pakistan">
+<title>Umer Farooq :: Home</title>
+<style type="text/css">
+body {
+  background-color: #d4d0c8;
+  color: #000000;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── outer table wrapper (classic 2000s centering) ── */
+.outer {
+  width: 760px;
+  margin: 10px auto;
+}
+
+/* ── top banner ── */
+#banner {
+  background-color: #003366;
+  border: 2px solid #000080;
+  padding: 0;
+  height: 70px;
+  display: table;
+  width: 100%;
+}
+#banner-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 16px;
+}
+#banner h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#banner p {
+  color: #99ccff;
+  font-size: 11px;
+  margin: 2px 0 0 0;
+}
+
+/* ── nav bar ── */
+#navbar {
+  background-color: #003366;
+  border-top: 1px solid #6699cc;
+  border-bottom: 2px solid #000;
+  padding: 3px 0;
+  font-size: 11px;
+  text-align: center;
+}
+#navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px 12px;
+  border-right: 1px solid #6699cc;
+  display: inline-block;
+}
+#navbar a:first-child { border-left: 1px solid #6699cc; }
+#navbar a:hover {
+  background-color: #0055aa;
+  text-decoration: underline;
+}
+
+/* ── 2-col layout ── */
+#layout {
+  display: table;
+  width: 100%;
+  margin-top: 6px;
+  border-spacing: 4px;
+}
+#sidebar {
+  display: table-cell;
+  width: 175px;
+  vertical-align: top;
+}
+#content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 4px;
+}
+
+/* ── boxes (the classic raised box look) ── */
+.box {
+  background-color: #ffffff;
+  border: 1px solid #808080;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  margin-bottom: 6px;
+}
+.box-title {
+  background-color: #003366;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 3px 6px;
+  font-family: Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.box-body {
+  padding: 8px;
+}
+
+/* ── sidebar nav links ── */
+.sidenav a {
+  display: block;
+  padding: 3px 6px;
+  color: #003366;
+  text-decoration: none;
+  font-size: 11px;
+  border-bottom: 1px dotted #cccccc;
+}
+.sidenav a:hover {
+  background-color: #003366;
+  color: #ffffff;
+  text-decoration: none;
+}
+.sidenav a::before { content: "» "; }
+
+/* ── content typography ── */
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #003366;
+  border-bottom: 1px solid #003366;
+  padding-bottom: 2px;
+  margin: 0 0 8px 0;
+}
+h3 {
+  font-size: 12px;
+  color: #003366;
+  margin: 0 0 4px 0;
+}
+p { margin: 0 0 8px 0; line-height: 1.6; }
+a { color: #0033cc; }
+a:visited { color: #663399; }
+a:hover { color: #cc0000; }
+
+/* ── project entry ── */
+.project-entry {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.project-entry:last-child { border-bottom: none; }
+.project-title {
+  font-weight: bold;
+  font-size: 13px;
+  color: #003366;
+}
+.project-stack {
+  color: #666666;
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 2px 0 4px 0;
+}
+.project-meta-row {
+  background-color: #eef2f8;
+  border: 1px solid #c0c8d8;
+  padding: 4px 6px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #333333;
+}
+.label {
+  display: inline-block;
+  background-color: #003366;
+  color: #ffffff;
+  font-size: 9px;
+  padding: 1px 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 4px;
+  letter-spacing: 0.5px;
+}
+.label.green { background-color: #336600; }
+.label.maroon { background-color: #660033; }
+.label.teal { background-color: #006666; }
+
+/* ── hit counter box ── */
+.counter {
+  background-color: #000000;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  letter-spacing: 4px;
+}
+
+/* ── divider ── */
+hr {
+  border: none;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #ffffff;
+  margin: 8px 0;
+}
+
+/* ── footer ── */
+#footer {
+  background-color: #003366;
+  border-top: 2px solid #000;
+  padding: 5px 10px;
+  margin-top: 6px;
+  color: #99ccff;
+  font-size: 10px;
+  text-align: center;
+}
+#footer a { color: #ffffff; }
+
+/* ── news item ── */
+.news-date {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 11px;
+}
+.news-body {
+  margin: 2px 0 8px 0;
+  padding-left: 8px;
+  border-left: 2px solid #003366;
+}
+
+/* ── table styling ── */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+table.data-table th {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 3px 6px;
+  text-align: left;
+  font-size: 11px;
+}
+table.data-table td {
+  padding: 3px 6px;
+  border-bottom: 1px solid #cccccc;
+}
+table.data-table tr:nth-child(even) td { background-color: #f0f4f8; }
+
+/* ── small caps utility ── */
+.mono {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+}
+</style>
+</head>
+<body>
+
+<div class="outer">
+
+  <!-- BANNER -->
+  <div id="banner">
+    <div id="banner-inner">
+      <h1>Umer Farooq</h1>
+      <p>Data Science &nbsp;|&nbsp; Forecasting Systems &nbsp;|&nbsp; AI / ML &nbsp;|&nbsp; Lahore, Pakistan</p>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="projects/index.html">Projects</a>
+    <a href="writing/index.html">Writing</a>
+    <a href="about/index.html">About</a>
+    <a href="contact/index.html">Contact</a>
+  </div>
+
+  <!-- LAYOUT -->
+  <div id="layout">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-title">Navigation</div>
+        <div class="box-body sidenav" style="padding:0;">
+          <a href="index.html">Home</a>
+          <a href="projects/index.html">Projects</a>
+          <a href="writing/index.html">Writing</a>
+          <a href="about/index.html">About Me</a>
+          <a href="contact/index.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">Links</div>
+        <div class="box-body sidenav" style="padding:0;">
+          <a href="https://github.com/umer-farooq230" target="_blank">GitHub</a>
+          <a href="https://medium.com/@umerfarooq230" target="_blank">Medium</a>
+          <a href="https://www.linkedin.com/in/umer-farooq-34b0401b6/" target="_blank">LinkedIn</a>
+          <a href="https://www.kaggle.com/umerfarooq230" target="_blank">Kaggle</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">Quick Stats</div>
+        <div class="box-body">
+          <table style="width:100%; font-size:11px;">
+            <tr>
+              <td style="color:#666;">Systems built</td>
+              <td style="text-align:right; font-weight:bold;">4</td>
+            </tr>
+            <tr>
+              <td style="color:#666;">Medium followers</td>
+              <td style="text-align:right; font-weight:bold;">145</td>
+            </tr>
+            <tr>
+              <td style="color:#666;">Languages</td>
+              <td style="text-align:right; font-weight:bold;">Python</td>
+            </tr>
+            <tr>
+              <td style="color:#666;">Location</td>
+              <td style="text-align:right; font-weight:bold;">Lahore</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">Visitors</div>
+        <div class="box-body">
+          <div class="counter">004821</div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">Site Info</div>
+        <div class="box-body">
+          <p style="font-size:10px; color:#666; margin:0;">
+            Best viewed at 1024x768.<br>
+            HTML 4.01 Transitional.<br>
+            No cookies. No tracking.<br>
+            Last updated: May 2026.
+          </p>
+        </div>
+      </div>
+
+    </div><!-- /sidebar -->
+
+    <!-- CONTENT -->
+    <div id="content">
+
+      <div class="box">
+        <div class="box-title">Welcome</div>
+        <div class="box-body">
+          <h2>Hello.</h2>
+          <p>
+            My name is <strong>Umer Farooq</strong>. I am a data science student from Lahore, Pakistan.
+            I started programming in 2023 and now spend most of my time building systems
+            that sit at the intersection of statistical modelling and practical machine learning.
+          </p>
+          <p>
+            This site is a collection of my work: forecasting engines, anomaly detection
+            pipelines, fine-tuned language models, and the writing I do on Medium to make
+            sense of all of it.
+          </p>
+          <p>
+            I am interested in problems that require both modelling precision and
+            a clear answer to the question: <em>so what does this mean for decisions?</em>
+            Use the navigation to explore.
+          </p>
+          <p>
+            Email: <a href="mailto:umerfarooq230@gmail.com">umerfarooq230@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">Latest Updates</div>
+        <div class="box-body">
+
+          <div class="news-date">May 2026</div>
+          <div class="news-body">
+            Published a new article on Medium:
+            <a href="https://medium.com/@umerfarooq230/i-made-a-system-calculator-for-local-llms-with-source-code-3bcbebeeaed3" target="_blank">
+            I built a system calculator for local LLMs</a> — a tool for sizing hardware
+            before running models locally.
+          </div>
+
+          <div class="news-date">2025</div>
+          <div class="news-body">
+            Released the <strong>Regime Switching Engine</strong> on GitHub.
+            An adaptive forecasting system for financial time series that switches between
+            ARIMA and GARCH based on detected volatility.
+            <a href="projects/index.html">See projects &rarr;</a>
+          </div>
+
+          <div class="news-date">2025</div>
+          <div class="news-body">
+            Completed <strong>NL2SQL fine-tuning</strong> of LLaMA 3.1 8B using Unsloth and LoRA.
+            Model exported to GGUF format for local deployment.
+          </div>
+
+          <div class="news-date">Oct 2024</div>
+          <div class="news-body">
+            Article published in <em>Towards AI</em>:
+            <a href="https://medium.com/towards-artificial-intelligence/the-ultimate-beginner-to-advance-guide-to-machine-learning-b4dd361aefbb" target="_blank">
+            The ultimate beginner-to-advanced guide to machine learning</a>.
+          </div>
+
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-title">Featured Project</div>
+        <div class="box-body">
+          <div class="project-entry" style="border:none; margin:0; padding:0;">
+            <div class="project-title">Regime Switching Engine for Financial Time Series</div>
+            <div class="project-stack">Python &middot; ARIMA &middot; GARCH &middot; statsmodels &middot; arch &middot; Streamlit</div>
+            <p>
+              A forecasting system that partitions financial time series into 30-day windows
+              and routes each window to either ARIMA or GARCH based on a volatility test.
+              Instead of applying a single model across all market conditions, this engine
+              adapts to the regime the market is currently in.
+            </p>
+            <div class="project-meta-row">
+              <span class="label">RMSE</span> 0.0097 (adaptive) &nbsp;&nbsp;
+              <span class="label green">-4.3%</span> vs GARCH-only &nbsp;&nbsp;
+              <span class="label teal">2233</span> windows processed
+            </div>
+            <p style="margin-top:6px; margin-bottom:0;">
+              <a href="projects/index.html">View all projects &rarr;</a> &nbsp;|&nbsp;
+              <a href="https://github.com/umer-farooq230/regime_switching_engine" target="_blank">GitHub repository &rarr;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /content -->
+  </div><!-- /layout -->
+
+  <!-- FOOTER -->
+  <div id="footer">
+    &copy; 2026 Umer Farooq &nbsp;&bull;&nbsp;
+    <a href="index.html">Home</a> &nbsp;&bull;&nbsp;
+    <a href="projects/index.html">Projects</a> &nbsp;&bull;&nbsp;
+    <a href="writing/index.html">Writing</a> &nbsp;&bull;&nbsp;
+    <a href="about/index.html">About</a> &nbsp;&bull;&nbsp;
+    <a href="contact/index.html">Contact</a>
+  </div>
+
+</div>
+
+</body>
+</html>
